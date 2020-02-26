@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SwiftGRPCDebugger_Tests' do
+  pod 'SwiftGRPCDebugger', :path => '../'
+  
+  
+end
