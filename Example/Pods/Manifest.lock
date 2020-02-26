@@ -1,0 +1,16 @@
+PODS:
+  - SwiftGRPCDebugger (0.1.0)
+
+DEPENDENCIES:
+  - SwiftGRPCDebugger (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftGRPCDebugger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftGRPCDebugger: dee849ec5c8217579f8a3eb2772845efbd500462
+
+PODFILE CHECKSUM: 2a8e369b4fda5375450d9b611f478f1b7dd97c5a
+
+COCOAPODS: 1.7.2

@@ -1,0 +1,22 @@
+{
+  "name": "SwiftGRPCDebugger",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftGRPCDebugger.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Wais Al Korni/SwiftGRPCDebugger",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Wais Al Korni": "wais.alkorni@tix.id"
+  },
+  "source": {
+    "git": "https://github.com/Wais Al Korni/SwiftGRPCDebugger.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftGRPCDebugger/Classes/**/*"
+}

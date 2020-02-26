@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftGRPCDebugger'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SwiftGRPCDebugger.'
+  s.summary          = 'A debugger for GRPC request using SwiftGRPC'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,24 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Wais Al Korni/SwiftGRPCDebugger'
+  s.homepage         = 'https://github.com/tix-id/tix-swift-grpc-debugger'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Wais Al Korni' => 'wais.alkorni@tix.id' }
-  s.source           = { :git => 'https://github.com/Wais Al Korni/SwiftGRPCDebugger.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/tix-id/tix-swift-grpc-debugger.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SwiftGRPCDebugger/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SwiftGRPCDebugger' => ['SwiftGRPCDebugger/Assets/*.png']
-  # }
+  s.swift_version = ['4.2', '5']
+  s.ios.deployment_target = '10.0'
+  s.requires_arc = true
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'SwiftGRPCDebugger/Classes/**/*.swift', 'SwiftGRPCDebugger/Vendor/SwiftGRPC/**/*.swift', 'SwiftGRPCDebugger/Vendor/CgRPC/shim/*.[ch]'
+  s.public_header_files = 'SwiftGRPCDebugger/Vendor/CgRPC/shim/cgrpc.h'
+
+  s.dependency 'gRPC-Core', '~> 1.19.0'
+  s.dependency 'SwiftProtobuf', '~> 1.5.0'
 end

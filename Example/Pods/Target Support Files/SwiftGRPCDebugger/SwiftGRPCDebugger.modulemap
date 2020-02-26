@@ -1,0 +1,6 @@
+framework module SwiftGRPCDebugger {
+  umbrella header "SwiftGRPCDebugger-umbrella.h"
+
+  export *
+  module * { export * }
+}
