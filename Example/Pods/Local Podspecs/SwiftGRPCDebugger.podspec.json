@@ -1,9 +1,9 @@
 {
   "name": "SwiftGRPCDebugger",
   "version": "0.1.0",
-  "summary": "A short description of SwiftGRPCDebugger.",
+  "summary": "A debugger for GRPC request using SwiftGRPC",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Wais Al Korni/SwiftGRPCDebugger",
+  "homepage": "https://github.com/tix-id/tix-swift-grpc-debugger",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,30 @@
     "Wais Al Korni": "wais.alkorni@tix.id"
   },
   "source": {
-    "git": "https://github.com/Wais Al Korni/SwiftGRPCDebugger.git",
+    "git": "https://github.com/tix-id/tix-swift-grpc-debugger.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "SwiftGRPCDebugger/Classes/**/*"
+  "source_files": [
+    "SwiftGRPCDebugger/Classes/**/*.swift",
+    "SwiftGRPCDebugger/Vendor/SwiftGRPC/**/*.swift",
+    "SwiftGRPCDebugger/Vendor/CgRPC/shim/*.[ch]"
+  ],
+  "swift_versions": [
+    "4.2",
+    "5"
+  ],
+  "requires_arc": true,
+  "public_header_files": "SwiftGRPCDebugger/Vendor/CgRPC/shim/cgrpc.h",
+  "dependencies": {
+    "gRPC-Core": [
+      "~> 1.19.0"
+    ],
+    "SwiftProtobuf": [
+      "~> 1.5.0"
+    ]
+  },
+  "swift_version": "5"
 }

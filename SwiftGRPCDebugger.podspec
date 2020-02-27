@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftGRPCDebugger'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A debugger for GRPC request using SwiftGRPC'
 
 # This description is used to generate tags and improve search results.
@@ -28,15 +28,13 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/tix-id/tix-swift-grpc-debugger.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
   s.source_files = 'SwiftGRPCDebugger/Classes/**/*'
   
   s.swift_version = ['4.2', '5']
   s.ios.deployment_target = '10.0'
   s.requires_arc = true
 
-  s.source_files = 'SwiftGRPCDebugger/Classes/**/*.swift', 'SwiftGRPCDebugger/Vendor/SwiftGRPC/**/*.swift', 'SwiftGRPCDebugger/Vendor/CgRPC/shim/*.[ch]'
+  s.source_files = 'SwiftGRPCDebugger/Classes/Debugger/*.swift', 'SwiftGRPCDebugger/Vendor/SwiftGRPC/**/*.swift', 'SwiftGRPCDebugger/Vendor/CgRPC/shim/*.[ch]'
   s.public_header_files = 'SwiftGRPCDebugger/Vendor/CgRPC/shim/cgrpc.h'
 
   s.dependency 'gRPC-Core', '~> 1.19.0'
