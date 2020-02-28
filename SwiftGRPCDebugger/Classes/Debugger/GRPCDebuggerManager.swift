@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class GRPCDebuggerManager {
+public final class GRPCDebuggerManager {
   
   static let shared = GRPCDebuggerManager()
   private var logs: [GRPCDebuggerModel] = [GRPCDebuggerModel]()
