@@ -114,7 +114,7 @@ final class GRPCDebuggerTableViewController: UITableViewController {
     tableViewType = type
     self.selectedItem = selectedItem
     
-    super.init(nibName: "GRPCDebuggerTableViewController", bundle: nil)
+    super.init(nibName: "GRPCDebuggerTableViewController", bundle: GRPCDebuggerManager.shared.bundle)
   }
   
   required init?(coder: NSCoder) {
@@ -126,10 +126,11 @@ final class GRPCDebuggerTableViewController: UITableViewController {
     
     subscribeDatasource()
     tableView.separatorStyle = .none
+    let bundle = GRPCDebuggerManager.shared.bundle
     
-    tableView.register(UINib(nibName: "GRPCDebuggerTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: GRPCDebuggerTableViewCell.self))
-    tableView.register(UINib(nibName: "GRPCDebuggerBodyTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: GRPCDebuggerBodyTableViewCell.self))
-    tableView.register(UINib(nibName: "GRPCDebuggerDetailTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: GRPCDebuggerDetailTableViewCell.self))
+    tableView.register(UINib(nibName: "GRPCDebuggerTableViewCell", bundle: bundle), forCellReuseIdentifier: String(describing: GRPCDebuggerTableViewCell.self))
+    tableView.register(UINib(nibName: "GRPCDebuggerBodyTableViewCell", bundle: bundle), forCellReuseIdentifier: String(describing: GRPCDebuggerBodyTableViewCell.self))
+    tableView.register(UINib(nibName: "GRPCDebuggerDetailTableViewCell", bundle: bundle), forCellReuseIdentifier: String(describing: GRPCDebuggerDetailTableViewCell.self))
   }
   
   override func viewWillAppear(_ animated: Bool) {

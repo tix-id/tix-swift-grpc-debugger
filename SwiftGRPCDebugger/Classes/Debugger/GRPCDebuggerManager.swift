@@ -16,6 +16,8 @@ public final class GRPCDebuggerManager {
   public var enabled: Bool = false
   var logsDidUpdateHandler: (() -> Void)?
   
+  let bundle = Bundle(identifier: "id.tix.SwiftGRPCDebugger")
+  
   private init() {
   }
   
