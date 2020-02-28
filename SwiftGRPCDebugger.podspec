@@ -30,6 +30,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
   s.requires_arc = true
 
+  s.resource_bundles = {
+    'SwiftGRPCDebugger' => ['SwiftGRPCDebugger/Classes/Debugger/*.xib']
+  }
   s.source_files = 'SwiftGRPCDebugger/Classes/Debugger/*.swift', 'SwiftGRPCDebugger/Vendor/SwiftGRPC/**/*.swift', 'SwiftGRPCDebugger/Vendor/CgRPC/shim/*.[ch]'
   s.public_header_files = 'SwiftGRPCDebugger/Vendor/CgRPC/shim/cgrpc.h'
 
