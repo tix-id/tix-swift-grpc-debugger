@@ -10,10 +10,10 @@ import Foundation
 
 public final class GRPCDebuggerManager {
   
-  static let shared = GRPCDebuggerManager()
+  public static let shared = GRPCDebuggerManager()
   private var logs: [GRPCDebuggerModel] = [GRPCDebuggerModel]()
   
-  var enabled: Bool = false
+  public var enabled: Bool = false
   var logsDidUpdateHandler: (() -> Void)?
   
   private init() {
@@ -43,7 +43,7 @@ public final class GRPCDebuggerManager {
     return logs
   }
   
-  func showDebugger(viewController: UIViewController) {
+  public func showDebugger(viewController: UIViewController) {
     
     let navigationController = UINavigationController(rootViewController: GRPCDebuggerTableViewController(type: .list))
     navigationController.modalPresentationStyle = .fullScreen
