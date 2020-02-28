@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftGRPCDebugger'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A debugger for GRPC request using SwiftGRPC'
 
 # This description is used to generate tags and improve search results.
