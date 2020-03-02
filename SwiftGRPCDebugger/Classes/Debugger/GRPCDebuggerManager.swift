@@ -8,13 +8,16 @@
 
 import Foundation
 
-public final class GRPCDebuggerManager: NSObject {
+public final class GRPCDebuggerManager {
   
   public static let shared = GRPCDebuggerManager()
   private var logs: [GRPCDebuggerModel] = [GRPCDebuggerModel]()
   
   public var enabled: Bool = false
   var logsDidUpdateHandler: (() -> Void)?
+  
+  private init(){
+  }
   
   func addModel(model: GRPCDebuggerModel) {
     logs.insert(model, at: 0)
@@ -41,7 +44,7 @@ public final class GRPCDebuggerManager: NSObject {
   }
   
   func getBundle() -> Bundle{
-      let podBundle = Bundle(for: GRPCDebuggerManager.classForCoder())
+    let podBundle = Bundle(idenfier: "org.cocoapods.SwiftGRPCDebugger")
       if let bundleURL = podBundle.url(forResource: "GRPCDebuggerManager", withExtension: "bundle"){
           if let bundle = Bundle(url: bundleURL) {
               return bundle
