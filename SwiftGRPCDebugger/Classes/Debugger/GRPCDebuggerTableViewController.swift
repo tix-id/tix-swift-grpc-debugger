@@ -114,7 +114,7 @@ final class GRPCDebuggerTableViewController: UITableViewController {
     tableViewType = type
     self.selectedItem = selectedItem
     
-    super.init(nibName: "GRPCDebuggerTableViewController", bundle: GRPCDebuggerManager.shared.bundle)
+    super.init(nibName: "GRPCDebuggerTableViewController", bundle: GRPCDebuggerManager.shared.getBundle())
   }
   
   required init?(coder: NSCoder) {
@@ -126,7 +126,7 @@ final class GRPCDebuggerTableViewController: UITableViewController {
     
     subscribeDatasource()
     tableView.separatorStyle = .none
-    let bundle = GRPCDebuggerManager.shared.bundle
+    let bundle = GRPCDebuggerManager.shared.getBundle()
     
     tableView.register(UINib(nibName: "GRPCDebuggerTableViewCell", bundle: bundle), forCellReuseIdentifier: String(describing: GRPCDebuggerTableViewCell.self))
     tableView.register(UINib(nibName: "GRPCDebuggerBodyTableViewCell", bundle: bundle), forCellReuseIdentifier: String(describing: GRPCDebuggerBodyTableViewCell.self))

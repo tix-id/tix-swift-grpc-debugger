@@ -3462,19 +3462,19 @@
 		4B45FA7D240681E40044CA7B /* Debugger */ = {
 			isa = PBXGroup;
 			children = (
-				4B45FA7E240681E40044CA7B /* GRPCDebuggerTableViewController.xib */,
-				4B45FA7F240681E40044CA7B /* GRPCDebuggerTableViewCell.swift */,
-				4B45FA80240681E40044CA7B /* GRPCDebuggerManager.swift */,
-				4B45FA81240681E40044CA7B /* GRPCDebuggerBodyViewController.xib */,
-				4B45FA82240681E40044CA7B /* GRPCDebuggerBodyTableViewCell.xib */,
-				4B45FA83240681E40044CA7B /* GRPCDebuggerTableViewController.swift */,
-				4B45FA84240681E40044CA7B /* GRPCDebuggerTableViewCell.xib */,
 				4B45FA85240681E40044CA7B /* GRPCDebuggerBodyTableViewCell.swift */,
+				4B45FA82240681E40044CA7B /* GRPCDebuggerBodyTableViewCell.xib */,
 				4B45FA86240681E40044CA7B /* GRPCDebuggerBodyViewController.swift */,
-				4B45FA87240681E40044CA7B /* UITextViewZeroPadding.swift */,
+				4B45FA81240681E40044CA7B /* GRPCDebuggerBodyViewController.xib */,
 				4B45FA88240681E40044CA7B /* GRPCDebuggerDetailTableViewCell.swift */,
-				4B45FA89240681E40044CA7B /* GRPCDebuggerModel.swift */,
 				4B45FA8A240681E40044CA7B /* GRPCDebuggerDetailTableViewCell.xib */,
+				4B45FA80240681E40044CA7B /* GRPCDebuggerManager.swift */,
+				4B45FA89240681E40044CA7B /* GRPCDebuggerModel.swift */,
+				4B45FA7F240681E40044CA7B /* GRPCDebuggerTableViewCell.swift */,
+				4B45FA84240681E40044CA7B /* GRPCDebuggerTableViewCell.xib */,
+				4B45FA83240681E40044CA7B /* GRPCDebuggerTableViewController.swift */,
+				4B45FA7E240681E40044CA7B /* GRPCDebuggerTableViewController.xib */,
+				4B45FA87240681E40044CA7B /* UITextViewZeroPadding.swift */,
 			);
 			path = Debugger;
 			sourceTree = "<group>";

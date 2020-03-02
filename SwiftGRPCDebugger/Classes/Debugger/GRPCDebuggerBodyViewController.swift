@@ -19,7 +19,7 @@ final class GRPCDebuggerBodyViewController: UIViewController {
     self.content = content
     self.sectionType = sectionType
     
-    super.init(nibName: "GRPCDebuggerBodyViewController", bundle: GRPCDebuggerManager.shared.bundle)
+    super.init(nibName: "GRPCDebuggerBodyViewController", bundle: GRPCDebuggerManager.shared.getBundle())
   }
   
   required init?(coder: NSCoder) {

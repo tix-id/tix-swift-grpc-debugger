@@ -8,18 +8,13 @@
 
 import Foundation
 
-public final class GRPCDebuggerManager {
+public final class GRPCDebuggerManager: NSObject {
   
   public static let shared = GRPCDebuggerManager()
   private var logs: [GRPCDebuggerModel] = [GRPCDebuggerModel]()
   
   public var enabled: Bool = false
   var logsDidUpdateHandler: (() -> Void)?
-  
-  let bundle = Bundle(identifier: "id.tix.SwiftGRPCDebugger")
-  
-  private init() {
-  }
   
   func addModel(model: GRPCDebuggerModel) {
     logs.insert(model, at: 0)
@@ -43,6 +38,17 @@ public final class GRPCDebuggerManager {
   
   func getLogs() -> [GRPCDebuggerModel] {
     return logs
+  }
+  
+  func getBundle() -> Bundle{
+      let podBundle = Bundle(for: GRPCDebuggerManager.classForCoder())
+      if let bundleURL = podBundle.url(forResource: "GRPCDebuggerManager", withExtension: "bundle"){
+          if let bundle = Bundle(url: bundleURL) {
+              return bundle
+          }
+      }
+      
+      return Bundle(for: GRPCDebuggerManager.classForCoder())
   }
   
   public func showDebugger(viewController: UIViewController) {

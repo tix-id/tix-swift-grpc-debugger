@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftGRPCDebugger'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A debugger for GRPC request using SwiftGRPC'
 
 # This description is used to generate tags and improve search results.
@@ -32,10 +32,6 @@ TODO: Add long description of the pod here.
 
   s.resource_bundles = {
     'SwiftGRPCDebugger' => ['SwiftGRPCDebugger/Classes/Debugger/*.xib']
-  }
-
-  s.info_plist = {
-    'CFBundleIdentifier' => 'id.tix.SwiftGRPCDebugger'
   }
 
   s.source_files = 'SwiftGRPCDebugger/Classes/Debugger/*.swift', 'SwiftGRPCDebugger/Vendor/SwiftGRPC/**/*.swift', 'SwiftGRPCDebugger/Vendor/CgRPC/shim/*.[ch]'
