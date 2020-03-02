@@ -43,7 +43,7 @@ public final class GRPCDebuggerManager {
     return logs
   }
   
-  func getBundle() -> Bundle? {
+  public func getBundle() -> Bundle? {
     let podBundle = Bundle(identifier: "org.cocoapods.SwiftGRPCDebugger")
     if let bundleURL = podBundle?.url(forResource: "SwiftGRPCDebugger", withExtension: "bundle"){
       if let bundle = Bundle(url: bundleURL) {
