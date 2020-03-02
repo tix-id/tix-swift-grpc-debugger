@@ -51,7 +51,7 @@ public final class GRPCDebuggerManager {
       }
     }
     
-    return Bundle(for: GRPCDebuggerManager.classForCoder())
+    return Bundle(identifier: "org.cocoapods.SwiftGRPCDebugger")
   }
   
   public func showDebugger(viewController: UIViewController) {
