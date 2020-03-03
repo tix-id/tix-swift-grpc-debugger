@@ -161,6 +161,10 @@ final class GRPCDebuggerTableViewController: UITableViewController {
   }
   
   private func subscribeDatasource() {
+    guard tableViewType == .list else {
+      return
+    }
+    
     GRPCDebuggerManager.shared.logsDidUpdateHandler = { [weak self] in
       DispatchQueue.main.async {
         self?.tableView.reloadData()
