@@ -833,7 +833,7 @@
 		4B0B75BE2420D73B00BB42D1 /* CgRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B65CB2420D64100BB42D1 /* CgRPC.framework */; };
 		4B0B75C62420E59200BB42D1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B75C52420E59200BB42D1 /* CoreFoundation.framework */; };
 		4B0B75C82420E5CE00BB42D1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B75C72420E5CE00BB42D1 /* libz.tbd */; };
-		4B0B75CB2420E91300BB42D1 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B75C92420E90600BB42D1 /* SwiftProtobuf.framework */; };
+		4B0B75CC2420F40300BB42D1 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B75C92420E90600BB42D1 /* SwiftProtobuf.framework */; };
 		4B679BFA24208ACD009776A5 /* SwiftGRPCDebugger_Carthage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B679BF824208ACD009776A5 /* SwiftGRPCDebugger_Carthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B679C2724208B47009776A5 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0224208B47009776A5 /* Metadata.swift */; };
 		4B679C2824208B47009776A5 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0324208B47009776A5 /* StatusCode.swift */; };
@@ -2183,7 +2183,7 @@
 			files = (
 				4B0B75BE2420D73B00BB42D1 /* CgRPC.framework in Frameworks */,
 				4B0B75BD2420D73800BB42D1 /* BoringSSL.framework in Frameworks */,
-				4B0B75CB2420E91300BB42D1 /* SwiftProtobuf.framework in Frameworks */,
+				4B0B75CC2420F40300BB42D1 /* SwiftProtobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
