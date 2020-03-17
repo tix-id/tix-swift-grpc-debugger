@@ -22,9 +22,7 @@ DerivedData
 # Bundler
 .bundle
 
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
+SwiftGRPCDebugger/Carthage/Checkouts
 SwiftGRPCDebugger/Carthage/Build
 
 # We recommend against adding the Pods directory to your .gitignore. However
