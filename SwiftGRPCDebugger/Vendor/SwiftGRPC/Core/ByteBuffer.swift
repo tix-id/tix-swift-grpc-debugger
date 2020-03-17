@@ -15,6 +15,7 @@
  */
 
 import Foundation
+import CgRPC
 
 /// Representation of raw data that may be sent and received using gRPC
 public class ByteBuffer {

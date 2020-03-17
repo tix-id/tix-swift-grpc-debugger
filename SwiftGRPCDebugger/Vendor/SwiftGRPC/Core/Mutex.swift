@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+import CgRPC
+
 /// A general-purpose Mutex used to synchronize gRPC operations
 /// but it can be used anywhere
 public class Mutex {

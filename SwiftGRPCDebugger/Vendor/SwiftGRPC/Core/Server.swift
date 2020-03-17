@@ -16,6 +16,7 @@
 
 import Dispatch
 import Foundation
+import CgRPC
 
 /// gRPC Server
 public class Server {

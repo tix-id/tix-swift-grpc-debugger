@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+import CgRPC
+
 extension Channel {
   /// The connectivity state of a given gRPC channel.
   public enum ConnectivityState {

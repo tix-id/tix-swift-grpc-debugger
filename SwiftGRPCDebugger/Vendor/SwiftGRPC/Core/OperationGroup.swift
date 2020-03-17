@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+import CgRPC
+
 /// A collection of gRPC operations
 class OperationGroup {
   /// A mutex for synchronizing tag generation

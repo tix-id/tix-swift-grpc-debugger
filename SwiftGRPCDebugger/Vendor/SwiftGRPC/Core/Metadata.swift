@@ -15,6 +15,7 @@
  */
 
 import Foundation // for String.Encoding
+import CgRPC
 
 /// Metadata sent with gRPC messages
 public class Metadata {

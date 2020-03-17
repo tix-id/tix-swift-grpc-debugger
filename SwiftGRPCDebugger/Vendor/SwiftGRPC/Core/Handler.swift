@@ -15,6 +15,7 @@
  */
 
 import Foundation // for String.Encoding
+import CgRPC
 
 /// A gRPC request handler
 public class Handler {

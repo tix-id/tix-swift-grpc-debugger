@@ -15,6 +15,7 @@
  */
 
 import Foundation
+import CgRPC
 
 /// Used to hold weak references to objects since `NSHashTable<T>.weakObjects()` isn't available on Linux.
 /// If/when this type becomes available on Linux, this should be replaced.

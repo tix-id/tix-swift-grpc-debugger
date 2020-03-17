@@ -16,6 +16,7 @@
 
 import Dispatch
 import Foundation
+import CgRPC
 
 extension Channel {
   /// Provides an interface for observing the connectivity of a given channel.

@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B679BFA24208ACD009776A5 /* SwiftGRPCDebugger_Carthage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B679BF824208ACD009776A5 /* SwiftGRPCDebugger_Carthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B679C2724208B47009776A5 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0224208B47009776A5 /* Metadata.swift */; };
+		4B679C2824208B47009776A5 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0324208B47009776A5 /* StatusCode.swift */; };
+		4B679C2924208B47009776A5 /* ServerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0424208B47009776A5 /* ServerStatus.swift */; };
+		4B679C2A24208B47009776A5 /* ChannelConnectivityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0524208B47009776A5 /* ChannelConnectivityObserver.swift */; };
+		4B679C2B24208B47009776A5 /* ChannelArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0624208B47009776A5 /* ChannelArgument.swift */; };
+		4B679C2C24208B47009776A5 /* gRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0724208B47009776A5 /* gRPC.swift */; };
+		4B679C2D24208B47009776A5 /* ByteBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0824208B47009776A5 /* ByteBuffer.swift */; };
+		4B679C2E24208B47009776A5 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0924208B47009776A5 /* Channel.swift */; };
+		4B679C2F24208B47009776A5 /* CallResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0A24208B47009776A5 /* CallResult.swift */; };
+		4B679C3024208B47009776A5 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0B24208B47009776A5 /* Server.swift */; };
+		4B679C3124208B47009776A5 /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0C24208B47009776A5 /* Mutex.swift */; };
+		4B679C3224208B47009776A5 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0D24208B47009776A5 /* Handler.swift */; };
+		4B679C3324208B47009776A5 /* OperationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0E24208B47009776A5 /* OperationGroup.swift */; };
+		4B679C3424208B47009776A5 /* CompletionQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C0F24208B47009776A5 /* CompletionQueue.swift */; };
+		4B679C3524208B47009776A5 /* ChannelConnectivityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1024208B47009776A5 /* ChannelConnectivityState.swift */; };
+		4B679C3624208B47009776A5 /* CallError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1124208B47009776A5 /* CallError.swift */; };
+		4B679C3724208B47009776A5 /* ClientNetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1224208B47009776A5 /* ClientNetworkMonitor.swift */; };
+		4B679C3824208B47009776A5 /* Roots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1324208B47009776A5 /* Roots.swift */; };
+		4B679C3924208B47009776A5 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1424208B47009776A5 /* Operation.swift */; };
+		4B679C3A24208B47009776A5 /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1524208B47009776A5 /* Call.swift */; };
+		4B679C3B24208B47009776A5 /* RPCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1724208B47009776A5 /* RPCError.swift */; };
+		4B679C3C24208B47009776A5 /* StreamSending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1824208B47009776A5 /* StreamSending.swift */; };
+		4B679C3D24208B47009776A5 /* ServerSessionUnary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1924208B47009776A5 /* ServerSessionUnary.swift */; };
+		4B679C3E24208B47009776A5 /* ServerSessionBidirectionalStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1A24208B47009776A5 /* ServerSessionBidirectionalStreaming.swift */; };
+		4B679C3F24208B47009776A5 /* ServerSessionServerStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1B24208B47009776A5 /* ServerSessionServerStreaming.swift */; };
+		4B679C4024208B47009776A5 /* ClientCallClientStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1C24208B47009776A5 /* ClientCallClientStreaming.swift */; };
+		4B679C4124208B47009776A5 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1D24208B47009776A5 /* ServiceProvider.swift */; };
+		4B679C4224208B47009776A5 /* ServiceServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1E24208B47009776A5 /* ServiceServer.swift */; };
+		4B679C4324208B47009776A5 /* StreamReceiving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C1F24208B47009776A5 /* StreamReceiving.swift */; };
+		4B679C4424208B47009776A5 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C2024208B47009776A5 /* ServiceClient.swift */; };
+		4B679C4524208B47009776A5 /* ClientCallServerStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C2124208B47009776A5 /* ClientCallServerStreaming.swift */; };
+		4B679C4624208B47009776A5 /* ClientCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C2224208B47009776A5 /* ClientCall.swift */; };
+		4B679C4724208B47009776A5 /* ServerSessionClientStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C2324208B47009776A5 /* ServerSessionClientStreaming.swift */; };
+		4B679C4824208B47009776A5 /* ServerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C2424208B47009776A5 /* ServerSession.swift */; };
+		4B679C4924208B47009776A5 /* ClientCallBidirectionalStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C2524208B47009776A5 /* ClientCallBidirectionalStreaming.swift */; };
+		4B679C4A24208B47009776A5 /* ClientCallUnary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B679C2624208B47009776A5 /* ClientCallUnary.swift */; };
+		4B67A89724208BD6009776A5 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B67A89524208BD6009776A5 /* SwiftProtobuf.framework */; };
+		4B67A89824208BD6009776A5 /* BoringSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B67A89624208BD6009776A5 /* BoringSSL.framework */; };
+		4B67D9F324209AEA009776A5 /* CgRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B67D9F224209AEA009776A5 /* CgRPC.framework */; };
+		4B67DA0224209C93009776A5 /* GRPCDebuggerTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B67D9F524209C92009776A5 /* GRPCDebuggerTableViewController.xib */; };
+		4B67DA0324209C93009776A5 /* GRPCDebuggerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67D9F624209C92009776A5 /* GRPCDebuggerTableViewCell.swift */; };
+		4B67DA0424209C93009776A5 /* GRPCDebuggerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67D9F724209C92009776A5 /* GRPCDebuggerManager.swift */; };
+		4B67DA0524209C93009776A5 /* GRPCDebuggerBodyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B67D9F824209C92009776A5 /* GRPCDebuggerBodyViewController.xib */; };
+		4B67DA0624209C93009776A5 /* GRPCDebuggerBodyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B67D9F924209C92009776A5 /* GRPCDebuggerBodyTableViewCell.xib */; };
+		4B67DA0724209C93009776A5 /* GRPCDebuggerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67D9FA24209C92009776A5 /* GRPCDebuggerTableViewController.swift */; };
+		4B67DA0824209C93009776A5 /* GRPCDebuggerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B67D9FB24209C92009776A5 /* GRPCDebuggerTableViewCell.xib */; };
+		4B67DA0924209C93009776A5 /* GRPCDebuggerBodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67D9FC24209C92009776A5 /* GRPCDebuggerBodyTableViewCell.swift */; };
+		4B67DA0A24209C93009776A5 /* GRPCDebuggerBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67D9FD24209C92009776A5 /* GRPCDebuggerBodyViewController.swift */; };
+		4B67DA0B24209C93009776A5 /* UITextViewZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67D9FE24209C92009776A5 /* UITextViewZeroPadding.swift */; };
+		4B67DA0C24209C93009776A5 /* GRPCDebuggerDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67D9FF24209C92009776A5 /* GRPCDebuggerDetailTableViewCell.swift */; };
+		4B67DA0D24209C93009776A5 /* GRPCDebuggerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B67DA0024209C92009776A5 /* GRPCDebuggerModel.swift */; };
+		4B67DA0E24209C93009776A5 /* GRPCDebuggerDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B67DA0124209C92009776A5 /* GRPCDebuggerDetailTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B679BF524208ACD009776A5 /* SwiftGRPCDebugger_Carthage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftGRPCDebugger_Carthage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B679BF824208ACD009776A5 /* SwiftGRPCDebugger_Carthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftGRPCDebugger_Carthage.h; sourceTree = "<group>"; };
+		4B679BF924208ACD009776A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B679C0224208B47009776A5 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
+		4B679C0324208B47009776A5 /* StatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
+		4B679C0424208B47009776A5 /* ServerStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerStatus.swift; sourceTree = "<group>"; };
+		4B679C0524208B47009776A5 /* ChannelConnectivityObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelConnectivityObserver.swift; sourceTree = "<group>"; };
+		4B679C0624208B47009776A5 /* ChannelArgument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelArgument.swift; sourceTree = "<group>"; };
+		4B679C0724208B47009776A5 /* gRPC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gRPC.swift; sourceTree = "<group>"; };
+		4B679C0824208B47009776A5 /* ByteBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteBuffer.swift; sourceTree = "<group>"; };
+		4B679C0924208B47009776A5 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		4B679C0A24208B47009776A5 /* CallResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallResult.swift; sourceTree = "<group>"; };
+		4B679C0B24208B47009776A5 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		4B679C0C24208B47009776A5 /* Mutex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutex.swift; sourceTree = "<group>"; };
+		4B679C0D24208B47009776A5 /* Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
+		4B679C0E24208B47009776A5 /* OperationGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationGroup.swift; sourceTree = "<group>"; };
+		4B679C0F24208B47009776A5 /* CompletionQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionQueue.swift; sourceTree = "<group>"; };
+		4B679C1024208B47009776A5 /* ChannelConnectivityState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelConnectivityState.swift; sourceTree = "<group>"; };
+		4B679C1124208B47009776A5 /* CallError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallError.swift; sourceTree = "<group>"; };
+		4B679C1224208B47009776A5 /* ClientNetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientNetworkMonitor.swift; sourceTree = "<group>"; };
+		4B679C1324208B47009776A5 /* Roots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roots.swift; sourceTree = "<group>"; };
+		4B679C1424208B47009776A5 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		4B679C1524208B47009776A5 /* Call.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		4B679C1724208B47009776A5 /* RPCError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPCError.swift; sourceTree = "<group>"; };
+		4B679C1824208B47009776A5 /* StreamSending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamSending.swift; sourceTree = "<group>"; };
+		4B679C1924208B47009776A5 /* ServerSessionUnary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSessionUnary.swift; sourceTree = "<group>"; };
+		4B679C1A24208B47009776A5 /* ServerSessionBidirectionalStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSessionBidirectionalStreaming.swift; sourceTree = "<group>"; };
+		4B679C1B24208B47009776A5 /* ServerSessionServerStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSessionServerStreaming.swift; sourceTree = "<group>"; };
+		4B679C1C24208B47009776A5 /* ClientCallClientStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCallClientStreaming.swift; sourceTree = "<group>"; };
+		4B679C1D24208B47009776A5 /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		4B679C1E24208B47009776A5 /* ServiceServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceServer.swift; sourceTree = "<group>"; };
+		4B679C1F24208B47009776A5 /* StreamReceiving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamReceiving.swift; sourceTree = "<group>"; };
+		4B679C2024208B47009776A5 /* ServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		4B679C2124208B47009776A5 /* ClientCallServerStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCallServerStreaming.swift; sourceTree = "<group>"; };
+		4B679C2224208B47009776A5 /* ClientCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCall.swift; sourceTree = "<group>"; };
+		4B679C2324208B47009776A5 /* ServerSessionClientStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSessionClientStreaming.swift; sourceTree = "<group>"; };
+		4B679C2424208B47009776A5 /* ServerSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSession.swift; sourceTree = "<group>"; };
+		4B679C2524208B47009776A5 /* ClientCallBidirectionalStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCallBidirectionalStreaming.swift; sourceTree = "<group>"; };
+		4B679C2624208B47009776A5 /* ClientCallUnary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCallUnary.swift; sourceTree = "<group>"; };
+		4B67A89524208BD6009776A5 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftProtobuf.framework; sourceTree = "<group>"; };
+		4B67A89624208BD6009776A5 /* BoringSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoringSSL.framework; sourceTree = "<group>"; };
+		4B67D9F224209AEA009776A5 /* CgRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CgRPC.framework; sourceTree = "<group>"; };
+		4B67D9F524209C92009776A5 /* GRPCDebuggerTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GRPCDebuggerTableViewController.xib; sourceTree = "<group>"; };
+		4B67D9F624209C92009776A5 /* GRPCDebuggerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRPCDebuggerTableViewCell.swift; sourceTree = "<group>"; };
+		4B67D9F724209C92009776A5 /* GRPCDebuggerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRPCDebuggerManager.swift; sourceTree = "<group>"; };
+		4B67D9F824209C92009776A5 /* GRPCDebuggerBodyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GRPCDebuggerBodyViewController.xib; sourceTree = "<group>"; };
+		4B67D9F924209C92009776A5 /* GRPCDebuggerBodyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GRPCDebuggerBodyTableViewCell.xib; sourceTree = "<group>"; };
+		4B67D9FA24209C92009776A5 /* GRPCDebuggerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRPCDebuggerTableViewController.swift; sourceTree = "<group>"; };
+		4B67D9FB24209C92009776A5 /* GRPCDebuggerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GRPCDebuggerTableViewCell.xib; sourceTree = "<group>"; };
+		4B67D9FC24209C92009776A5 /* GRPCDebuggerBodyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRPCDebuggerBodyTableViewCell.swift; sourceTree = "<group>"; };
+		4B67D9FD24209C92009776A5 /* GRPCDebuggerBodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRPCDebuggerBodyViewController.swift; sourceTree = "<group>"; };
+		4B67D9FE24209C92009776A5 /* UITextViewZeroPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewZeroPadding.swift; sourceTree = "<group>"; };
+		4B67D9FF24209C92009776A5 /* GRPCDebuggerDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRPCDebuggerDetailTableViewCell.swift; sourceTree = "<group>"; };
+		4B67DA0024209C92009776A5 /* GRPCDebuggerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRPCDebuggerModel.swift; sourceTree = "<group>"; };
+		4B67DA0124209C92009776A5 /* GRPCDebuggerDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GRPCDebuggerDetailTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B679BF224208ACD009776A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B67D9F324209AEA009776A5 /* CgRPC.framework in Frameworks */,
+				4B67A89824208BD6009776A5 /* BoringSSL.framework in Frameworks */,
+				4B67A89724208BD6009776A5 /* SwiftProtobuf.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B679BEB24208ACD009776A5 = {
+			isa = PBXGroup;
+			children = (
+				4B679BF724208ACD009776A5 /* SwiftGRPCDebugger-Carthage */,
+				4B679BF624208ACD009776A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B679BF624208ACD009776A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B679BF524208ACD009776A5 /* SwiftGRPCDebugger_Carthage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B679BF724208ACD009776A5 /* SwiftGRPCDebugger-Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				4B67A89424208BD6009776A5 /* Frameworks */,
+				4B679C0024208B47009776A5 /* SwiftGRPC */,
+				4B679BF824208ACD009776A5 /* SwiftGRPCDebugger_Carthage.h */,
+				4B679BF924208ACD009776A5 /* Info.plist */,
+			);
+			path = "SwiftGRPCDebugger-Carthage";
+			sourceTree = "<group>";
+		};
+		4B679C0024208B47009776A5 /* SwiftGRPC */ = {
+			isa = PBXGroup;
+			children = (
+				4B67D9F424209C92009776A5 /* Debugger */,
+				4B679C0124208B47009776A5 /* Core */,
+				4B679C1624208B47009776A5 /* Runtime */,
+			);
+			name = SwiftGRPC;
+			path = ../../SwiftGRPCDebugger/Vendor/SwiftGRPC;
+			sourceTree = "<group>";
+		};
+		4B679C0124208B47009776A5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4B679C0224208B47009776A5 /* Metadata.swift */,
+				4B679C0324208B47009776A5 /* StatusCode.swift */,
+				4B679C0424208B47009776A5 /* ServerStatus.swift */,
+				4B679C0524208B47009776A5 /* ChannelConnectivityObserver.swift */,
+				4B679C0624208B47009776A5 /* ChannelArgument.swift */,
+				4B679C0724208B47009776A5 /* gRPC.swift */,
+				4B679C0824208B47009776A5 /* ByteBuffer.swift */,
+				4B679C0924208B47009776A5 /* Channel.swift */,
+				4B679C0A24208B47009776A5 /* CallResult.swift */,
+				4B679C0B24208B47009776A5 /* Server.swift */,
+				4B679C0C24208B47009776A5 /* Mutex.swift */,
+				4B679C0D24208B47009776A5 /* Handler.swift */,
+				4B679C0E24208B47009776A5 /* OperationGroup.swift */,
+				4B679C0F24208B47009776A5 /* CompletionQueue.swift */,
+				4B679C1024208B47009776A5 /* ChannelConnectivityState.swift */,
+				4B679C1124208B47009776A5 /* CallError.swift */,
+				4B679C1224208B47009776A5 /* ClientNetworkMonitor.swift */,
+				4B679C1324208B47009776A5 /* Roots.swift */,
+				4B679C1424208B47009776A5 /* Operation.swift */,
+				4B679C1524208B47009776A5 /* Call.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4B679C1624208B47009776A5 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				4B679C1724208B47009776A5 /* RPCError.swift */,
+				4B679C1824208B47009776A5 /* StreamSending.swift */,
+				4B679C1924208B47009776A5 /* ServerSessionUnary.swift */,
+				4B679C1A24208B47009776A5 /* ServerSessionBidirectionalStreaming.swift */,
+				4B679C1B24208B47009776A5 /* ServerSessionServerStreaming.swift */,
+				4B679C1C24208B47009776A5 /* ClientCallClientStreaming.swift */,
+				4B679C1D24208B47009776A5 /* ServiceProvider.swift */,
+				4B679C1E24208B47009776A5 /* ServiceServer.swift */,
+				4B679C1F24208B47009776A5 /* StreamReceiving.swift */,
+				4B679C2024208B47009776A5 /* ServiceClient.swift */,
+				4B679C2124208B47009776A5 /* ClientCallServerStreaming.swift */,
+				4B679C2224208B47009776A5 /* ClientCall.swift */,
+				4B679C2324208B47009776A5 /* ServerSessionClientStreaming.swift */,
+				4B679C2424208B47009776A5 /* ServerSession.swift */,
+				4B679C2524208B47009776A5 /* ClientCallBidirectionalStreaming.swift */,
+				4B679C2624208B47009776A5 /* ClientCallUnary.swift */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		4B67A89424208BD6009776A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B67D9F224209AEA009776A5 /* CgRPC.framework */,
+				4B67A89524208BD6009776A5 /* SwiftProtobuf.framework */,
+				4B67A89624208BD6009776A5 /* BoringSSL.framework */,
+			);
+			path = Frameworks;
+			sourceTree = SOURCE_ROOT;
+		};
+		4B67D9F424209C92009776A5 /* Debugger */ = {
+			isa = PBXGroup;
+			children = (
+				4B67D9F524209C92009776A5 /* GRPCDebuggerTableViewController.xib */,
+				4B67D9F624209C92009776A5 /* GRPCDebuggerTableViewCell.swift */,
+				4B67D9F724209C92009776A5 /* GRPCDebuggerManager.swift */,
+				4B67D9F824209C92009776A5 /* GRPCDebuggerBodyViewController.xib */,
+				4B67D9F924209C92009776A5 /* GRPCDebuggerBodyTableViewCell.xib */,
+				4B67D9FA24209C92009776A5 /* GRPCDebuggerTableViewController.swift */,
+				4B67D9FB24209C92009776A5 /* GRPCDebuggerTableViewCell.xib */,
+				4B67D9FC24209C92009776A5 /* GRPCDebuggerBodyTableViewCell.swift */,
+				4B67D9FD24209C92009776A5 /* GRPCDebuggerBodyViewController.swift */,
+				4B67D9FE24209C92009776A5 /* UITextViewZeroPadding.swift */,
+				4B67D9FF24209C92009776A5 /* GRPCDebuggerDetailTableViewCell.swift */,
+				4B67DA0024209C92009776A5 /* GRPCDebuggerModel.swift */,
+				4B67DA0124209C92009776A5 /* GRPCDebuggerDetailTableViewCell.xib */,
+			);
+			name = Debugger;
+			path = Classes/Debugger;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4B679BF024208ACD009776A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B679BFA24208ACD009776A5 /* SwiftGRPCDebugger_Carthage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4B679BF424208ACD009776A5 /* SwiftGRPCDebugger-Carthage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B679BFD24208ACD009776A5 /* Build configuration list for PBXNativeTarget "SwiftGRPCDebugger-Carthage" */;
+			buildPhases = (
+				4B679BF024208ACD009776A5 /* Headers */,
+				4B679BF124208ACD009776A5 /* Sources */,
+				4B679BF224208ACD009776A5 /* Frameworks */,
+				4B679BF324208ACD009776A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftGRPCDebugger-Carthage";
+			productName = "SwiftGRPCDebugger-Carthage";
+			productReference = 4B679BF524208ACD009776A5 /* SwiftGRPCDebugger_Carthage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B679BEC24208ACD009776A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nusantara Elang Sejahtera";
+				TargetAttributes = {
+					4B679BF424208ACD009776A5 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 4B679BEF24208ACD009776A5 /* Build configuration list for PBXProject "SwiftGRPCDebugger-Carthage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B679BEB24208ACD009776A5;
+			productRefGroup = 4B679BF624208ACD009776A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B679BF424208ACD009776A5 /* SwiftGRPCDebugger-Carthage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B679BF324208ACD009776A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B67DA0E24209C93009776A5 /* GRPCDebuggerDetailTableViewCell.xib in Resources */,
+				4B67DA0224209C93009776A5 /* GRPCDebuggerTableViewController.xib in Resources */,
+				4B67DA0524209C93009776A5 /* GRPCDebuggerBodyViewController.xib in Resources */,
+				4B67DA0824209C93009776A5 /* GRPCDebuggerTableViewCell.xib in Resources */,
+				4B67DA0624209C93009776A5 /* GRPCDebuggerBodyTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B679BF124208ACD009776A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B67DA0324209C93009776A5 /* GRPCDebuggerTableViewCell.swift in Sources */,
+				4B679C3624208B47009776A5 /* CallError.swift in Sources */,
+				4B67DA0424209C93009776A5 /* GRPCDebuggerManager.swift in Sources */,
+				4B67DA0B24209C93009776A5 /* UITextViewZeroPadding.swift in Sources */,
+				4B679C4824208B47009776A5 /* ServerSession.swift in Sources */,
+				4B679C4524208B47009776A5 /* ClientCallServerStreaming.swift in Sources */,
+				4B67DA0C24209C93009776A5 /* GRPCDebuggerDetailTableViewCell.swift in Sources */,
+				4B679C3024208B47009776A5 /* Server.swift in Sources */,
+				4B679C3E24208B47009776A5 /* ServerSessionBidirectionalStreaming.swift in Sources */,
+				4B679C3424208B47009776A5 /* CompletionQueue.swift in Sources */,
+				4B67DA0924209C93009776A5 /* GRPCDebuggerBodyTableViewCell.swift in Sources */,
+				4B679C3524208B47009776A5 /* ChannelConnectivityState.swift in Sources */,
+				4B679C4624208B47009776A5 /* ClientCall.swift in Sources */,
+				4B679C3724208B47009776A5 /* ClientNetworkMonitor.swift in Sources */,
+				4B679C2B24208B47009776A5 /* ChannelArgument.swift in Sources */,
+				4B679C3C24208B47009776A5 /* StreamSending.swift in Sources */,
+				4B679C4324208B47009776A5 /* StreamReceiving.swift in Sources */,
+				4B679C4024208B47009776A5 /* ClientCallClientStreaming.swift in Sources */,
+				4B679C4424208B47009776A5 /* ServiceClient.swift in Sources */,
+				4B679C4A24208B47009776A5 /* ClientCallUnary.swift in Sources */,
+				4B67DA0724209C93009776A5 /* GRPCDebuggerTableViewController.swift in Sources */,
+				4B679C2E24208B47009776A5 /* Channel.swift in Sources */,
+				4B679C3824208B47009776A5 /* Roots.swift in Sources */,
+				4B679C3924208B47009776A5 /* Operation.swift in Sources */,
+				4B679C3B24208B47009776A5 /* RPCError.swift in Sources */,
+				4B679C2A24208B47009776A5 /* ChannelConnectivityObserver.swift in Sources */,
+				4B679C2D24208B47009776A5 /* ByteBuffer.swift in Sources */,
+				4B679C3324208B47009776A5 /* OperationGroup.swift in Sources */,
+				4B67DA0D24209C93009776A5 /* GRPCDebuggerModel.swift in Sources */,
+				4B679C2924208B47009776A5 /* ServerStatus.swift in Sources */,
+				4B679C3224208B47009776A5 /* Handler.swift in Sources */,
+				4B679C3124208B47009776A5 /* Mutex.swift in Sources */,
+				4B679C4724208B47009776A5 /* ServerSessionClientStreaming.swift in Sources */,
+				4B679C3F24208B47009776A5 /* ServerSessionServerStreaming.swift in Sources */,
+				4B67DA0A24209C93009776A5 /* GRPCDebuggerBodyViewController.swift in Sources */,
+				4B679C2824208B47009776A5 /* StatusCode.swift in Sources */,
+				4B679C4124208B47009776A5 /* ServiceProvider.swift in Sources */,
+				4B679C2724208B47009776A5 /* Metadata.swift in Sources */,
+				4B679C3A24208B47009776A5 /* Call.swift in Sources */,
+				4B679C3D24208B47009776A5 /* ServerSessionUnary.swift in Sources */,
+				4B679C4924208B47009776A5 /* ClientCallBidirectionalStreaming.swift in Sources */,
+				4B679C2F24208B47009776A5 /* CallResult.swift in Sources */,
+				4B679C4224208B47009776A5 /* ServiceServer.swift in Sources */,
+				4B679C2C24208B47009776A5 /* gRPC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4B679BFB24208ACD009776A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B679BFC24208ACD009776A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B679BFE24208ACD009776A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "SwiftGRPCDebugger-Carthage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "id.tix.SwiftGRPCDebugger-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4B679BFF24208ACD009776A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "SwiftGRPCDebugger-Carthage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "id.tix.SwiftGRPCDebugger-Carthage";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B679BEF24208ACD009776A5 /* Build configuration list for PBXProject "SwiftGRPCDebugger-Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B679BFB24208ACD009776A5 /* Debug */,
+				4B679BFC24208ACD009776A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B679BFD24208ACD009776A5 /* Build configuration list for PBXNativeTarget "SwiftGRPCDebugger-Carthage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B679BFE24208ACD009776A5 /* Debug */,
+				4B679BFF24208ACD009776A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B679BEC24208ACD009776A5 /* Project object */;
+}

@@ -16,6 +16,7 @@
 
 import Dispatch
 import Foundation
+import CgRPC
 
 /// A type indicating the kind of event returned by the completion queue
 enum CompletionType {

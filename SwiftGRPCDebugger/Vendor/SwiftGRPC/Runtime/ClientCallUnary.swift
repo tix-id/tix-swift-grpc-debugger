@@ -22,6 +22,7 @@
 import Dispatch
 import Foundation
 import SwiftProtobuf
+import CgRPC
 
 public protocol ClientCallUnary: ClientCall {}
 

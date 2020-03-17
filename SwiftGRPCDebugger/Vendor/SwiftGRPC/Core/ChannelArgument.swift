@@ -15,6 +15,7 @@
  */
 
 import Foundation // for String.Encoding
+import CgRPC
 
 extension Channel {
   public enum Argument {

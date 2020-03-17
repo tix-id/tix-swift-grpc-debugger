@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+import CgRPC
+
 public final class gRPC {
   private init() { }  // Static members only.
 

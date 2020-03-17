@@ -16,6 +16,7 @@
 
 import Dispatch
 import Foundation
+import CgRPC
 
 public enum CallError: Error {
   case ok
