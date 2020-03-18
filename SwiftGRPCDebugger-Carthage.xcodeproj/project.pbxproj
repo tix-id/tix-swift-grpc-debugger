@@ -889,6 +889,7 @@
 		4BE949622421F95E005920FC /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9495F2421F95E005920FC /* pb_common.c */; };
 		4BE949632421F95E005920FC /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BE949602421F95E005920FC /* pb_encode.c */; };
 		4BE949642421F9F2005920FC /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE9494E2421F8D6005920FC /* nanopb.framework */; };
+		4BE9496D24220175005920FC /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE9494E2421F8D6005920FC /* nanopb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -914,6 +915,13 @@
 			remoteInfo = CgRPC;
 		};
 		4BE949652421F9F8005920FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B679BEC24208ACD009776A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BE9494D2421F8D6005920FC;
+			remoteInfo = nanopb;
+		};
+		4BE9496E2422017D005920FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4B679BEC24208ACD009776A5 /* Project object */;
 			proxyType = 1;
@@ -2210,6 +2218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE9496D24220175005920FC /* nanopb.framework in Frameworks */,
 				4B0B75BE2420D73B00BB42D1 /* CgRPC.framework in Frameworks */,
 				4B0B75BD2420D73800BB42D1 /* BoringSSL.framework in Frameworks */,
 				4B0B75CC2420F40300BB42D1 /* SwiftProtobuf.framework in Frameworks */,
@@ -5023,6 +5032,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4BE9496F2422017D005920FC /* PBXTargetDependency */,
 				4B0B75D02421004E00BB42D1 /* PBXTargetDependency */,
 				4B0B75CE2421004600BB42D1 /* PBXTargetDependency */,
 			);
@@ -5934,6 +5944,11 @@
 			isa = PBXTargetDependency;
 			target = 4BE9494D2421F8D6005920FC /* nanopb */;
 			targetProxy = 4BE949652421F9F8005920FC /* PBXContainerItemProxy */;
+		};
+		4BE9496F2422017D005920FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BE9494D2421F8D6005920FC /* nanopb */;
+			targetProxy = 4BE9496E2422017D005920FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
