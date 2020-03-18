@@ -884,6 +884,10 @@
 		4BE949202421C850005920FC /* GRPCDebuggerDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE949132421C850005920FC /* GRPCDebuggerDetailTableViewCell.swift */; };
 		4BE949212421C850005920FC /* GRPCDebuggerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE949142421C850005920FC /* GRPCDebuggerModel.swift */; };
 		4BE949222421C850005920FC /* GRPCDebuggerDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BE949152421C850005920FC /* GRPCDebuggerDetailTableViewCell.xib */; };
+		4BE949452421F0B5005920FC /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0B693C2420D65E00BB42D1 /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE949462421F0B5005920FC /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0B693E2420D65E00BB42D1 /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE949472421F0B5005920FC /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0B693F2420D65E00BB42D1 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE949482421F0B5005920FC /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0B69402420D65E00BB42D1 /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -4816,6 +4820,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B0B6F5B2420D66800BB42D1 /* cgrpc.h in Headers */,
+				4BE949452421F0B5005920FC /* pb_common.h in Headers */,
+				4BE949462421F0B5005920FC /* pb.h in Headers */,
+				4BE949472421F0B5005920FC /* pb_encode.h in Headers */,
+				4BE949482421F0B5005920FC /* pb_decode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
