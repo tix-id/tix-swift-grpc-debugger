@@ -15,7 +15,7 @@ final class GRPCDebuggerTableViewCell: UITableViewCell {
   @IBOutlet weak private var urlLabel: UILabel!
   
   func configure(model: GRPCDebuggerModel) {
-    guard let isSuccess = model.success else {
+    guard let statusCode = model.statusCode else {
       statusLabel.textColor = UIColor.black
       statusLabel.text = "-"
       executionTimeLabel.text = "-"
@@ -24,10 +24,10 @@ final class GRPCDebuggerTableViewCell: UITableViewCell {
       return
     }
     
-    statusLabel.text = isSuccess ? "Success" : "Failed"
+    statusLabel.text = statusCode == .ok ? "Success" : "Failed"
     executionTimeLabel.text = model.executionTimeText
     urlLabel.text = model.method
     
-    statusLabel.textColor = isSuccess ? UIColor.green : UIColor.red
+    statusLabel.textColor = statusCode == .ok ? UIColor.green : UIColor.red
   }
 }
