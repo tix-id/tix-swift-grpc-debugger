@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B0B6C572420D66100BB42D1 /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B65D52420D65B00BB42D1 /* pb_common.c */; };
-		4B0B6C582420D66100BB42D1 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B65D62420D65B00BB42D1 /* pb_decode.c */; };
-		4B0B6C592420D66100BB42D1 /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B65D72420D65B00BB42D1 /* pb_encode.c */; };
 		4B0B6C5A2420D66100BB42D1 /* grpc_plugin_registry.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B65DB2420D65B00BB42D1 /* grpc_plugin_registry.cc */; };
 		4B0B6C5B2420D66100BB42D1 /* client_idle_filter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B65DF2420D65B00BB42D1 /* client_idle_filter.cc */; };
 		4B0B6C5C2420D66100BB42D1 /* client_channel_channelz.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B65E12420D65B00BB42D1 /* client_channel_channelz.cc */; };
@@ -884,10 +881,14 @@
 		4BE949202421C850005920FC /* GRPCDebuggerDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE949132421C850005920FC /* GRPCDebuggerDetailTableViewCell.swift */; };
 		4BE949212421C850005920FC /* GRPCDebuggerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE949142421C850005920FC /* GRPCDebuggerModel.swift */; };
 		4BE949222421C850005920FC /* GRPCDebuggerDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BE949152421C850005920FC /* GRPCDebuggerDetailTableViewCell.xib */; };
-		4BE949452421F0B5005920FC /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0B693C2420D65E00BB42D1 /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BE949462421F0B5005920FC /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0B693E2420D65E00BB42D1 /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BE949472421F0B5005920FC /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0B693F2420D65E00BB42D1 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BE949482421F0B5005920FC /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B0B69402420D65E00BB42D1 /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE9495A2421F94C005920FC /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE949562421F94C005920FC /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE9495B2421F94C005920FC /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE949572421F94C005920FC /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE9495C2421F94C005920FC /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE949582421F94C005920FC /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE9495D2421F94C005920FC /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE949592421F94C005920FC /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BE949612421F95E005920FC /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9495E2421F95E005920FC /* pb_decode.c */; };
+		4BE949622421F95E005920FC /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9495F2421F95E005920FC /* pb_common.c */; };
+		4BE949632421F95E005920FC /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 4BE949602421F95E005920FC /* pb_encode.c */; };
+		4BE949642421F9F2005920FC /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BE9494E2421F8D6005920FC /* nanopb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -912,14 +913,18 @@
 			remoteGlobalIDString = 4B0B65CA2420D64100BB42D1;
 			remoteInfo = CgRPC;
 		};
+		4BE949652421F9F8005920FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B679BEC24208ACD009776A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BE9494D2421F8D6005920FC;
+			remoteInfo = nanopb;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4B0B65CB2420D64100BB42D1 /* CgRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CgRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0B65CE2420D64100BB42D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B0B65D52420D65B00BB42D1 /* pb_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
-		4B0B65D62420D65B00BB42D1 /* pb_decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
-		4B0B65D72420D65B00BB42D1 /* pb_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
 		4B0B65DB2420D65B00BB42D1 /* grpc_plugin_registry.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = grpc_plugin_registry.cc; sourceTree = "<group>"; };
 		4B0B65DF2420D65B00BB42D1 /* client_idle_filter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = client_idle_filter.cc; sourceTree = "<group>"; };
 		4B0B65E12420D65B00BB42D1 /* client_channel_channelz.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = client_channel_channelz.cc; sourceTree = "<group>"; };
@@ -1685,11 +1690,7 @@
 		4B0B69342420D65E00BB42D1 /* grpc_posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grpc_posix.h; sourceTree = "<group>"; };
 		4B0B69352420D65E00BB42D1 /* grpc_security.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grpc_security.h; sourceTree = "<group>"; };
 		4B0B69362420D65E00BB42D1 /* load_reporting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = load_reporting.h; sourceTree = "<group>"; };
-		4B0B693C2420D65E00BB42D1 /* pb_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
 		4B0B693D2420D65E00BB42D1 /* cgrpc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cgrpc.h; sourceTree = "<group>"; };
-		4B0B693E2420D65E00BB42D1 /* pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
-		4B0B693F2420D65E00BB42D1 /* pb_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
-		4B0B69402420D65E00BB42D1 /* pb_decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
 		4B0B72222420D6E500BB42D1 /* BoringSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoringSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0B72252420D6E500BB42D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B0B722C2420D70500BB42D1 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
@@ -2175,6 +2176,15 @@
 		4BE949132421C850005920FC /* GRPCDebuggerDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRPCDebuggerDetailTableViewCell.swift; sourceTree = "<group>"; };
 		4BE949142421C850005920FC /* GRPCDebuggerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GRPCDebuggerModel.swift; sourceTree = "<group>"; };
 		4BE949152421C850005920FC /* GRPCDebuggerDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GRPCDebuggerDetailTableViewCell.xib; sourceTree = "<group>"; };
+		4BE9494E2421F8D6005920FC /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BE949512421F8D6005920FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BE949562421F94C005920FC /* pb_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pb_common.h; path = Vendor/CgRPC/include/pb_common.h; sourceTree = SOURCE_ROOT; };
+		4BE949572421F94C005920FC /* pb_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pb_encode.h; path = Vendor/CgRPC/include/pb_encode.h; sourceTree = SOURCE_ROOT; };
+		4BE949582421F94C005920FC /* pb_decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pb_decode.h; path = Vendor/CgRPC/include/pb_decode.h; sourceTree = SOURCE_ROOT; };
+		4BE949592421F94C005920FC /* pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pb.h; path = Vendor/CgRPC/include/pb.h; sourceTree = SOURCE_ROOT; };
+		4BE9495E2421F95E005920FC /* pb_decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pb_decode.c; path = Vendor/CgRPC/third_party/nanopb/pb_decode.c; sourceTree = SOURCE_ROOT; };
+		4BE9495F2421F95E005920FC /* pb_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pb_common.c; path = Vendor/CgRPC/third_party/nanopb/pb_common.c; sourceTree = SOURCE_ROOT; };
+		4BE949602421F95E005920FC /* pb_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pb_encode.c; path = Vendor/CgRPC/third_party/nanopb/pb_encode.c; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2182,6 +2192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE949642421F9F2005920FC /* nanopb.framework in Frameworks */,
 				4B0B75C82420E5CE00BB42D1 /* libz.tbd in Frameworks */,
 				4B0B75C62420E59200BB42D1 /* CoreFoundation.framework in Frameworks */,
 				4B0B75BC2420D72F00BB42D1 /* BoringSSL.framework in Frameworks */,
@@ -2205,6 +2216,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BE9494B2421F8D6005920FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -2214,29 +2232,9 @@
 				4B0B68FD2420D65E00BB42D1 /* include */,
 				4B0B68EE2420D65E00BB42D1 /* shim */,
 				4B0B65D82420D65B00BB42D1 /* src */,
-				4B0B65D32420D65B00BB42D1 /* third_party */,
 				4B0B65CE2420D64100BB42D1 /* Info.plist */,
 			);
 			path = CgRPC;
-			sourceTree = "<group>";
-		};
-		4B0B65D32420D65B00BB42D1 /* third_party */ = {
-			isa = PBXGroup;
-			children = (
-				4B0B65D42420D65B00BB42D1 /* nanopb */,
-			);
-			name = third_party;
-			path = Vendor/CgRPC/third_party;
-			sourceTree = SOURCE_ROOT;
-		};
-		4B0B65D42420D65B00BB42D1 /* nanopb */ = {
-			isa = PBXGroup;
-			children = (
-				4B0B65D52420D65B00BB42D1 /* pb_common.c */,
-				4B0B65D62420D65B00BB42D1 /* pb_decode.c */,
-				4B0B65D72420D65B00BB42D1 /* pb_encode.c */,
-			);
-			path = nanopb;
 			sourceTree = "<group>";
 		};
 		4B0B65D82420D65B00BB42D1 /* src */ = {
@@ -3699,11 +3697,7 @@
 			isa = PBXGroup;
 			children = (
 				4B0B68FE2420D65E00BB42D1 /* grpc */,
-				4B0B693C2420D65E00BB42D1 /* pb_common.h */,
 				4B0B693D2420D65E00BB42D1 /* cgrpc.h */,
-				4B0B693E2420D65E00BB42D1 /* pb.h */,
-				4B0B693F2420D65E00BB42D1 /* pb_encode.h */,
-				4B0B69402420D65E00BB42D1 /* pb_decode.h */,
 			);
 			name = include;
 			path = Vendor/CgRPC/include;
@@ -4705,6 +4699,7 @@
 				4B679BF724208ACD009776A5 /* SwiftGRPCDebugger-Carthage */,
 				4B0B65CC2420D64100BB42D1 /* CgRPC */,
 				4B0B72232420D6E500BB42D1 /* BoringSSL */,
+				4BE9494F2421F8D6005920FC /* nanopb */,
 				4B679BF624208ACD009776A5 /* Products */,
 				4B0B75BB2420D72F00BB42D1 /* Frameworks */,
 			);
@@ -4716,6 +4711,7 @@
 				4B679BF524208ACD009776A5 /* SwiftGRPCDebugger_Carthage.framework */,
 				4B0B65CB2420D64100BB42D1 /* CgRPC.framework */,
 				4B0B72222420D6E500BB42D1 /* BoringSSL.framework */,
+				4BE9494E2421F8D6005920FC /* nanopb.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4812,6 +4808,21 @@
 			path = Classes/Debugger;
 			sourceTree = SOURCE_ROOT;
 		};
+		4BE9494F2421F8D6005920FC /* nanopb */ = {
+			isa = PBXGroup;
+			children = (
+				4BE9495F2421F95E005920FC /* pb_common.c */,
+				4BE9495E2421F95E005920FC /* pb_decode.c */,
+				4BE949602421F95E005920FC /* pb_encode.c */,
+				4BE949562421F94C005920FC /* pb_common.h */,
+				4BE949582421F94C005920FC /* pb_decode.h */,
+				4BE949572421F94C005920FC /* pb_encode.h */,
+				4BE949592421F94C005920FC /* pb.h */,
+				4BE949512421F8D6005920FC /* Info.plist */,
+			);
+			path = nanopb;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -4820,10 +4831,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B0B6F5B2420D66800BB42D1 /* cgrpc.h in Headers */,
-				4BE949452421F0B5005920FC /* pb_common.h in Headers */,
-				4BE949462421F0B5005920FC /* pb.h in Headers */,
-				4BE949472421F0B5005920FC /* pb_encode.h in Headers */,
-				4BE949482421F0B5005920FC /* pb_decode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4952,6 +4959,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BE949492421F8D6005920FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE9495D2421F94C005920FC /* pb.h in Headers */,
+				4BE9495B2421F94C005920FC /* pb_encode.h in Headers */,
+				4BE9495C2421F94C005920FC /* pb_decode.h in Headers */,
+				4BE9495A2421F94C005920FC /* pb_common.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -4967,6 +4985,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4BE949662421F9F8005920FC /* PBXTargetDependency */,
 				4B0B75C02420DD6300BB42D1 /* PBXTargetDependency */,
 			);
 			name = CgRPC;
@@ -5012,6 +5031,24 @@
 			productReference = 4B679BF524208ACD009776A5 /* SwiftGRPCDebugger_Carthage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4BE9494D2421F8D6005920FC /* nanopb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BE949532421F8D6005920FC /* Build configuration list for PBXNativeTarget "nanopb" */;
+			buildPhases = (
+				4BE949492421F8D6005920FC /* Headers */,
+				4BE9494A2421F8D6005920FC /* Sources */,
+				4BE9494B2421F8D6005920FC /* Frameworks */,
+				4BE9494C2421F8D6005920FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nanopb;
+			productName = nanopb;
+			productReference = 4BE9494E2421F8D6005920FC /* nanopb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -5028,6 +5065,9 @@
 						CreatedOnToolsVersion = 11.3;
 					};
 					4B679BF424208ACD009776A5 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					4BE9494D2421F8D6005920FC = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -5048,6 +5088,7 @@
 				4B679BF424208ACD009776A5 /* SwiftGRPCDebugger-Carthage */,
 				4B0B65CA2420D64100BB42D1 /* CgRPC */,
 				4B0B72212420D6E500BB42D1 /* BoringSSL */,
+				4BE9494D2421F8D6005920FC /* nanopb */,
 			);
 		};
 /* End PBXProject section */
@@ -5076,6 +5117,13 @@
 				4BE949192421C850005920FC /* GRPCDebuggerBodyViewController.xib in Resources */,
 				4BE9491C2421C850005920FC /* GRPCDebuggerTableViewCell.xib in Resources */,
 				4BE9491A2421C850005920FC /* GRPCDebuggerBodyTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BE9494C2421F8D6005920FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5329,9 +5377,6 @@
 				4B0B6DF62420D66500BB42D1 /* parser.cc in Sources */,
 				4B0B6CA62420D66200BB42D1 /* parse_address.cc in Sources */,
 				4B0B6D022420D66300BB42D1 /* parsing.cc in Sources */,
-				4B0B6C572420D66100BB42D1 /* pb_common.c in Sources */,
-				4B0B6C582420D66100BB42D1 /* pb_decode.c in Sources */,
-				4B0B6C592420D66100BB42D1 /* pb_encode.c in Sources */,
 				4B0B6DA92420D66400BB42D1 /* percent_encoding.cc in Sources */,
 				4B0B6C762420D66200BB42D1 /* pick_first.cc in Sources */,
 				4B0B6D562420D66400BB42D1 /* pid_controller.cc in Sources */,
@@ -5857,6 +5902,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4BE9494A2421F8D6005920FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE949632421F95E005920FC /* pb_encode.c in Sources */,
+				4BE949622421F95E005920FC /* pb_common.c in Sources */,
+				4BE949612421F95E005920FC /* pb_decode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -5874,6 +5929,11 @@
 			isa = PBXTargetDependency;
 			target = 4B0B65CA2420D64100BB42D1 /* CgRPC */;
 			targetProxy = 4B0B75CF2421004E00BB42D1 /* PBXContainerItemProxy */;
+		};
+		4BE949662421F9F8005920FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BE9494D2421F8D6005920FC /* nanopb */;
+			targetProxy = 4BE949652421F9F8005920FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -6218,6 +6278,66 @@
 			};
 			name = Release;
 		};
+		4BE949542421F8D6005920FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Vendor/CgRPC/include",
+				);
+				INFOPLIST_FILE = nanopb/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = id.tix.nanopb;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BE949552421F8D6005920FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/Vendor/CgRPC/include",
+				);
+				INFOPLIST_FILE = nanopb/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = id.tix.nanopb;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -6253,6 +6373,15 @@
 			buildConfigurations = (
 				4B679BFE24208ACD009776A5 /* Debug */,
 				4B679BFF24208ACD009776A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BE949532421F8D6005920FC /* Build configuration list for PBXNativeTarget "nanopb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BE949542421F8D6005920FC /* Debug */,
+				4BE949552421F8D6005920FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
