@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BE9494D2421F8D6005920FC"
-               BuildableName = "nanopb.framework"
-               BlueprintName = "nanopb"
+               BlueprintIdentifier = "4BE9497424222925005920FC"
+               BuildableName = "nanopb_custom.framework"
+               BlueprintName = "nanopb-custom"
                ReferencedContainer = "container:SwiftGRPCDebugger-Carthage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4BE9494D2421F8D6005920FC"
-            BuildableName = "nanopb.framework"
-            BlueprintName = "nanopb"
+            BlueprintIdentifier = "4BE9497424222925005920FC"
+            BuildableName = "nanopb_custom.framework"
+            BlueprintName = "nanopb-custom"
             ReferencedContainer = "container:SwiftGRPCDebugger-Carthage.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
