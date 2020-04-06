@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "cgrpc.h"
 
 FOUNDATION_EXPORT double SwiftGRPCDebuggerVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftGRPCDebuggerVersionString[];

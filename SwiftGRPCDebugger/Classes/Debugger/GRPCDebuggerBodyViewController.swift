@@ -31,7 +31,6 @@ final class GRPCDebuggerBodyViewController: UIViewController {
     
     title = sectionType.sectionTitle()
     bodyTextView.text = content
-    
     edgesForExtendedLayout = []
   }
   

@@ -1,6 +1,6 @@
 {
   "name": "SwiftGRPCDebugger",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "summary": "A debugger for GRPC request using SwiftGRPC",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/tix-id/tix-swift-grpc-debugger",
@@ -13,21 +13,26 @@
   },
   "source": {
     "git": "https://github.com/tix-id/tix-swift-grpc-debugger.git",
-    "tag": "0.1.0"
+    "tag": "0.1.6"
   },
-  "platforms": {
-    "ios": "10.0"
-  },
-  "source_files": [
-    "SwiftGRPCDebugger/Classes/**/*.swift",
-    "SwiftGRPCDebugger/Vendor/SwiftGRPC/**/*.swift",
-    "SwiftGRPCDebugger/Vendor/CgRPC/shim/*.[ch]"
-  ],
   "swift_versions": [
     "4.2",
     "5"
   ],
+  "platforms": {
+    "ios": "10.0"
+  },
   "requires_arc": true,
+  "resource_bundles": {
+    "SwiftGRPCDebugger": [
+      "SwiftGRPCDebugger/Classes/Debugger/*.xib"
+    ]
+  },
+  "source_files": [
+    "SwiftGRPCDebugger/Classes/Debugger/*.swift",
+    "SwiftGRPCDebugger/Vendor/SwiftGRPC/**/*.swift",
+    "SwiftGRPCDebugger/Vendor/CgRPC/shim/*.[ch]"
+  ],
   "public_header_files": "SwiftGRPCDebugger/Vendor/CgRPC/shim/cgrpc.h",
   "dependencies": {
     "gRPC-Core": [

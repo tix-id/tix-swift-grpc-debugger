@@ -7,17 +7,18 @@
 //
 
 import Foundation
+import SwiftProtobuf
 
 struct GRPCDebuggerModel {
   
   var identifier: String = String.randomString(length: 32)
   var requestHeader: [String: String] = [:]
   var method: String = "-"
-  var requestBody: String = "-"
+  var requestBody: Message?
   var success: Bool? = nil
   var statusCode: StatusCode? = nil
   var statusMessage: String = "-"
-  var responseBody: String = "-"
+  var responseBody: Message?
   var responseHeader: [String: String] = [:]
   var executionTime: TimeInterval = 0
   
@@ -25,12 +26,20 @@ struct GRPCDebuggerModel {
     return String(format: "%.fms", executionTime)
   }
   
-  var requestBodyJson: String? {
-    return requestBody == "-" ? requestBody : requestBody.data(using: .utf8)?.prettyPrintedJSONString
+  var requestBodyString: String {
+    guard let requestBody = requestBody else {
+      return "-"
+    }
+    
+    return "\(requestBody)"
   }
-  
-  var responseBodyJson: String? {
-    return responseBody == "-" ? responseBody : responseBody.data(using: .utf8)?.prettyPrintedJSONString
+
+  var responseBodyString: String {
+    guard let responseBody = responseBody else {
+      return "-"
+    }
+    
+    return "\(responseBody)"
   }
   
   var overview: [[String: String]] {

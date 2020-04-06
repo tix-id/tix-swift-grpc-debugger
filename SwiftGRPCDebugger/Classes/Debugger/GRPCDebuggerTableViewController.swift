@@ -60,9 +60,9 @@ enum DebuggerSectionType: Int, CaseIterable {
     case .responseHeader:
       return model.getResponseHeader()
     case .requestBody:
-      return [["content": model.requestBody]]
+      return [["content": model.requestBodyString]]
     case .responseBody:
-      return [["content": model.responseBody]]
+      return [["content": model.responseBodyString]]
     }
   }
 }
@@ -213,22 +213,18 @@ final class GRPCDebuggerTableViewController: UITableViewController {
         return
     }
     
-    var content: String? = nil
+    var content = ""
     
     switch sectionType {
     case .requestBody:
-      content = selectedItem.requestBodyJson
+      content = selectedItem.requestBodyString
     case .responseBody:
-      content = selectedItem.responseBodyJson
+      content = selectedItem.responseBodyString
     default:
       return
     }
     
-    guard let jsonContent = content, !jsonContent.isEmpty else {
-      return
-    }
-    
-    let bodyViewController = GRPCDebuggerBodyViewController(content: jsonContent, sectionType: sectionType)
+    let bodyViewController = GRPCDebuggerBodyViewController(content: content, sectionType: sectionType)
     navigationController?.pushViewController(bodyViewController, animated: true)
   }
   

@@ -54,7 +54,8 @@ open class ClientCallUnaryBase<InputType: Message, OutputType: Message>: ClientC
     var loggerModel = GRPCDebuggerModel()
     if GRPCDebuggerManager.shared.enabled {
       loggerModel.requestHeader = metadata.dictionaryRepresentation
-      loggerModel.requestBody = try request.jsonString()
+//      loggerModel.requestBody = try request.jsonString()
+      loggerModel.requestBody = request
       loggerModel.method = type(of: self).method
       GRPCDebuggerManager.shared.addModel(model: loggerModel)
     }
@@ -79,8 +80,13 @@ open class ClientCallUnaryBase<InputType: Message, OutputType: Message>: ClientC
         let outputType = try? OutputType(serializedData: responseData)
         
         if GRPCDebuggerManager.shared.enabled {
+          
           do {
-            loggerModel.responseBody = try outputType?.jsonString() ?? "-"
+//            var encodingOptions = JSONEncodingOptions()
+//            encodingOptions.preserveProtoFieldNames = true
+//            encodingOptions.alwaysPrintEnumsAsInts = true
+//            loggerModel.responseBody = try outputType?.jsonString(options: encodingOptions) ?? "-"
+            loggerModel.responseBody = outputType
             GRPCDebuggerManager.shared.updateModel(model: loggerModel)
           } catch {}
         }
